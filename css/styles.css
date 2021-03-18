@@ -147,7 +147,22 @@ img {
 
 /*активная страница*/
 .current {
+  position: relative;
   color: var(--accent-color);
+}
+
+.current::after {
+  position: absolute;
+  content: "";
+  display: inline;
+  width: 100%;
+  height: 4px;
+  border-radius: 2px;
+  background-color: var(--accent-color);
+  transform: translateX(-100%);
+  /*left: 0;*/
+  bottom: 0;
+
 }
 
 /*наведение*/
